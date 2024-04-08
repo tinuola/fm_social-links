@@ -1,5 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');
+  font-weight: 800;
+}
+
 :root {
-  --var: value;
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --primary-font: 'Inter';
 }
 
 @media only screen and (min-width: 600px) {
@@ -10,12 +32,18 @@
 /***********/
 
 body {
+  background-color: var(--off-black);
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 0.875rem;
+}
+
+.site-container {
   display: grid;
+  min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  /* grid-template-rows: 1fr auto; */
   justify-items: center;
   align-items: center;
-  background-image: url('../assets/images/');
 }
 
 .fm-byline {
@@ -26,4 +54,5 @@ body {
 
 .fm-byline,
 .fm-byline a {
+  color: var(--white);
 }

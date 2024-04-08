@@ -17,11 +17,11 @@
     />
     <meta
       name="description"
-      content="Solution to the blank challenge on Frontend Mentor."
+      content="Solution to the Social Links Profile challenge on Frontend Mentor."
     />
     <meta
       name="theme-color"
-      content="#"
+      content="#c5f82a"
     />
     <link
       rel="icon"
@@ -44,31 +44,43 @@
       href="css/a11y.css"
     />
     <!-- Scripts -->
-    <script
+    <!-- <script
       src="js/script.js"
       defer
-    ></script>
+    ></script> -->
     <title>Social Links Profile | Frontend Mentor</title>
   </head>
   <body>
-    <div class="container">
+    <div class="site-container">
       <header>
         <a
           href="#main"
           class="skip"
           >Skip to main content</a
         >
-        <h1>Social Links Profile - A Frontend Mentor Project</h1>
+        <h1 class="sr-only">
+          Social Links Profile - A Frontend Mentor Project
+        </h1>
       </header>
       <main id="main">
-        <p>
-          Jessica Randall London, United Kingdom "Front-end developer and avid
-          reader." GitHub Frontend Mentor LinkedIn Twitter Instagram
-        </p>
-        <img
-          src="assets/images/"
-          alt=""
-        />
+        <section class="user-profile">
+          <div class="img-wrapper">
+            <img
+              src="assets/images/avatar-jessica.jpeg"
+              alt="Jessica Randall"
+            />
+          </div>
+          <h2>Jessica Randall</h2>
+          <p>London, United Kingdom</p>
+          <p>"Front-end developer and avid reader."</p>
+        </section>
+        <ul class="social-links">
+          <li>GitHub</li>
+          <li>Frontend Mentor</li>
+          <li>LinkedIn</li>
+          <li>Mastodon</li>
+          <li>Instagram</li>
+        </ul>
       </main>
       <footer class="fm-byline-row">
         <p class="fm-byline">
