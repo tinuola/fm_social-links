@@ -27,10 +27,6 @@
 @media only screen and (min-width: 600px) {
 }
 
-/***********/
-/* Section */
-/***********/
-
 body {
   background-color: var(--off-black);
   color: var(--white);
@@ -57,6 +53,13 @@ body {
   row-gap: 1.5rem;
 }
 
+@media only screen and (min-width: 576px) {
+  .card-container {
+    width: 384px;
+    padding: 2.5rem;
+  }
+}
+
 .img-wrapper img {
   margin: 0 auto;
   border-radius: 50%;
@@ -77,12 +80,15 @@ body {
   row-gap: 1rem;
 }
 
-.social-link-item {
-  font-weight: 600;
+.social-link-item button {
   background-color: var(--grey);
   width: 100%;
   padding: 0.75rem 0;
+
   border-radius: 0.5rem;
+  border: 0;
+  font-weight: 600;
+  color: inherit;
 }
 
 .fm-byline-row {
