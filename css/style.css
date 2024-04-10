@@ -1,22 +1,10 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-
 :root {
   --btn-bground: rgb(68, 65, 64);
   --card-bground: rgba(31, 31, 31, 0.42);
   --card-border: rgb(96, 96, 96);
   --white: rgb(255, 255, 255);
-  --dark-grey: hsl(0, 0%, 12%);
-  --off-black: hsl(0, 0%, 8%);
-  --primary-font: 'Inter';
+  --primary-font: 'Inter', sans-serif;
+  --headline-font: 'Playfair Display', serif;
 }
 
 body {
@@ -89,6 +77,8 @@ body {
 }
 
 .profile-wrapper h2 {
+  font-family: var(--headline-font);
+  letter-spacing: 1px;
   font-size: 1.5rem;
 }
 
@@ -139,7 +129,7 @@ body {
 }
 
 .social-link-item button:hover::after {
-  border: 1.5px solid var(--white);
+  border: 2px solid var(--white);
   transform: scale3d(1, 1, 1);
 }
 
