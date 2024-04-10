@@ -55,6 +55,7 @@ body {
 .card-container {
   width: 327px;
   padding: 1.5rem;
+  margin-top: 2rem;
   background-color: var(--card-bground);
   border: 1px solid var(--card-border);
   border-radius: 0.75rem;
